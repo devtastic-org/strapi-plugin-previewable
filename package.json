@@ -1,0 +1,50 @@
+{
+  "name": "strapi-plugin-previewable",
+  "version": "0.1.0",
+  "description": "Preview your website from within Strapi.",
+  "strapi": {
+    "displayName": "Preview",
+    "name": "preview",
+    "description": "Preview your website from within Strapi.",
+    "kind": "plugin"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  },
+  "author": {
+    "name": "Devtastic",
+    "email": "info@devtastic.co",
+    "url": "https://devtastic.co"
+  },
+  "maintainers": [
+    {
+      "name": "Leon van der Grient",
+      "email": "leon@devtastic.co",
+      "url": "https://github.com/LeonVanDerGrient"
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/devtastic-org/strapi-plugin-previewable",
+    "type": "git"
+  },
+  "engines": {
+    "node": ">=14.x. <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "keywords": [
+    "strapi",
+    "preview",
+    "plugin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@strapi/design-system": "^1.1.1",
+    "@strapi/helper-plugin": "^4.2.0",
+    "@strapi/icons": "^1.1.1",
+    "react": "^18.2.0",
+    "styled-components": "^5.3.5"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.2.0"
+  }
+}
