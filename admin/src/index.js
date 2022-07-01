@@ -4,7 +4,6 @@ import pluginPkg from "../../package.json";
 import pluginId from "./utils/pluginId";
 import PluginIcon from "./components/PluginIcon";
 import Initializer from "./components/Initializer";
-import PreviewButton from "./components/PreviewButton";
 
 const pluginDescription = pluginPkg.strapi.description || pluginPkg.description;
 const { name } = pluginPkg.strapi;
@@ -37,12 +36,6 @@ export default {
     });
   },
 
-  bootstrap(app) {
-    app.injectContentManagerComponent("editView", "right-links", {
-      name: "preview-compo",
-      Component: PreviewButton,
-    });
-  },
   async registerTrads({ locales }) {
     const importedTrads = await Promise.all(
       locales.map((locale) => {

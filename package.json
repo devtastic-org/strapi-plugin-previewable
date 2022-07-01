@@ -1,10 +1,10 @@
 {
   "name": "strapi-plugin-previewable",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Preview your website from within Strapi.",
   "strapi": {
-    "displayName": "Preview",
-    "name": "preview",
+    "displayName": "Previewable",
+    "name": "previewable",
     "description": "Preview your website from within Strapi.",
     "kind": "plugin"
   },

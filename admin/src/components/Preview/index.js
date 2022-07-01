@@ -23,13 +23,11 @@ const Preview = () => {
   }, []);
 
   return websiteUrl ? (
-    <>
-      <iframe
-        src={websiteUrl}
-        loading="lazy"
-        style={{ height: "calc(100vh - 2px)", width: "100%" }}
-      />
-    </>
+    <iframe
+      src={websiteUrl}
+      loading="lazy"
+      style={{ height: "calc(100vh - 2px)", width: "100%" }}
+    />
   ) : null;
 };
 
