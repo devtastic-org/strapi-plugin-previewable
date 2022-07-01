@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-previewable",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Preview your website from within Strapi.",
   "strapi": {
     "displayName": "Preview",
@@ -37,13 +37,7 @@
     "plugin"
   ],
   "license": "MIT",
-  "dependencies": {
-    "@strapi/design-system": "^1.1.1",
-    "@strapi/helper-plugin": "^4.2.0",
-    "@strapi/icons": "^1.1.1",
-    "react": "^18.2.0",
-    "styled-components": "^5.3.5"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "@strapi/strapi": "^4.2.0"
   }

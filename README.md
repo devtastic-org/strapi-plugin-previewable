@@ -1,8 +1,8 @@
 <div align="center" width="150px">
-  <img style="width: 150px; height: auto;" src="public/assets/logo.svg" alt="Logo - Strapi Preview plugin" />
+  <img style="width: 150px; height: auto;" width="150" src="public/assets/logo.svg" alt="Logo - Strapi Previewable plugin" />
 </div>
 <div align="center">
-  <h1>Strapi v4 - Preview plugin</h1>
+  <h1>Strapi v4 - Previewable plugin</h1>
   <p>Preview your website from within Strapi</p>
   <a href="https://www.npmjs.org/package/strapi-plugin-previewable">
     <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/devtastic-org/strapi-plugin-previewable?label=npm&logo=npm">
@@ -15,6 +15,7 @@
 ---
 
 A plugin for [Strapi](https://github.com/strapi/strapi) that embeds your site in Strapi.
+The use case for this is to allow content editors to easily enter [Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode).
 
 ## Supported Strapi version
 
@@ -35,8 +36,13 @@ yarn add strapi-plugin-previewable
 In the `config/plugins.js` file add:
 
 ```js
-preview: {
-  websiteUrl: "<URL TO YOUR WEBSITE>"
+module.exports = {
+  preview: {
+    config: {
+      websiteUrl: "<URL TO YOUR WEBSITE>"
+    },
+  },
+  // other plugins
 }
 ```
 
